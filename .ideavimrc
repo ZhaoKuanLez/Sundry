@@ -1,0 +1,30 @@
+set argtextobj
+set hlsearch
+set laststatus=2
+set number
+set relativenumber
+set scrolloff=5
+set showmatch
+set smartindent
+set surround
+set tabstop=4
+
+" Mapping
+inoremap jk <Esc>
+nnoremap <Space>s :w<CR>
+nnoremap <Space>j ^
+nnoremap <Space>k $
+
+" Plugins settings.
+set multiple-cursors
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap <C-x> <Plug>SkipOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+nmap <C-p> <Plug>RemoveOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+nmap <S-C-n> <Plug>AllWholeOccurrences
+xmap <S-C-n> <Plug>AllWholeOccurrences
+
+let mapleader=","
+set easymotion
