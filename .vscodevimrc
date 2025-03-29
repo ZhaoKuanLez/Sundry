@@ -1,0 +1,39 @@
+// Vim configurations for VSCode
+{
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize": 20,
+    "editor.fontFamily": "'Jetbrains mono nerd font', 'Courier New', Consolas,  monospace",
+    "editor.minimap.maxColumn": 80,
+    "editor.rulers": [
+        {"column": 80, "color": "#00ff4c"}
+    ],
+    "debug.console.fontSize": 20,
+    "terminal.integrated.fontSize": 20,
+    "database-client.autoSync": true,
+
+    // VIM Configuration for Windows
+    "editor.lineNumbers": "relative",
+    "vim.leader": "<Space>",
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [{
+        "before": ["j", "k"],
+        "after": ["Esc"]
+    }],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "j"],
+            "after": ["^"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "after": ["$"]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "commands": [":w"]
+        },
+    ],
+    "pyqt-integration.pyuic.cmd": "D:\\Software\\anaconda3\\Scripts\\pyuic5.exe",
+    "pyqt-integration.qtdesigner.path": "D:\\Software\\anaconda3\\Library\\bin\\designer.exe"
+}
